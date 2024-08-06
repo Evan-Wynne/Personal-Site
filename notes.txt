@@ -1,5 +1,6 @@
 sites to link:
 my cv
+my certifications
 my socials:
     linkedin
     x
@@ -11,6 +12,11 @@ resources: (things i pay for)
     remnote
     school notes
     hardware and software that I use*
+    websites i like.
+        investing
+        technology
+
+
 
 photos
 
@@ -28,3 +34,4 @@ something vctech related
 
 
 find ryans twitter
+jobsearch sheet - add link for product hunt page and my microsoft todo doc
