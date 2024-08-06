@@ -10,6 +10,10 @@ body {
   background-color: rgb(8, 8, 84);
   background-image: linear-gradient(rgb(3, 52, 98), hsl(241, 100%, 69%)); 
   margin: 0%; 
+  height: 100%;
+  font-family: Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  
 }
 hr {
   color: hsl(0, 2%, 66%);
