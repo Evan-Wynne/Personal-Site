@@ -178,4 +178,11 @@ p.main{
   }
 
 
-
+  .rise-on-hover {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  
+  .rise-on-hover:hover {
+    transform: translateY(-10px);
+  }
