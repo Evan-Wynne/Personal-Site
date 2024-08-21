@@ -1,42 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
 
-  
-  <!DOCTYPE html>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
   <meta charset="UTF-8">
-  <html lang="en">
-    <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="billy.png"> <!-- Updated file extension to .jpg -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1><a class="header-link" href="index.html">Evan Wynne</a></h1>
   
-    <head>
-      <h1><a class="header-link" href="mb.html">ALT 3</a></h1>
-    </head>
-
-  
-    <nav class = 'navbar'>
-      <ul>
-        <li><a class = "T" href="index.html">Meeting the brief</a></li>
-        <li><a class = "T" href="investigation.html">Investigation</a></li>
-        <li><a class = "T" href="pad.html">Plan and Design</a></li>
-        <li><a class = "T" href="create.html">Create</a></li>
-        <li><a class = "T" href="evaluation.html">Evaluation</a></li>
-        <li><a class = "T" href="references.html">References</a></li>
-        <li><a class = "T" href="wordcount.html">Word Count</a></li>
-        
-      </ul>
-
-    </nav>
-      <hr>
-      <p style="text-align: center;">
-        
-    
-        <br>
-        <b>Evan Wynne - ALT 3<br><br></b>
-        <b>Click below for my cool video<br>https://neat-curiosity-709697.framer.app/evansbarbershop</b> 
-        
-        <div>
-          <div style="text-align: center;">
-            <a href="https://sspsie-my.sharepoint.com/:v:/g/personal/evan_wynne_ssps_ie/EWvhnDYn56dOhhoIeW9Gsj0BmHAfvzdeEEQuPCjk_L3-vQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ZHgIES"><img src="mc.png" style="width: 500px;"></a>
-          
-
-          </div>
-      </p>
+  <nav class='navbar'>
+    <ul>
+      <li><a class="T" href="index.html">index</a></li>
+      <li><a class="T" href="investigation.html">What I'm working on</a></li>
+      <li><a class="T" href="pad.html">Resources</a></li>
+      <li><a class="T" href="create.html">Diary</a></li>    
+    </ul>
+  </nav>
       
+  <p style="text-align: center;">
+    This site is in <i><b class="rise-on-hover">slow</b></i> development. Please contact me via LinkedIn for tips - I'm no good at this.
+  </p>
+
+  <p style="text-align: center;">
+    <a href="https://www.linkedin.com/in/evan-wynne-sps/">LinkedIn</a>
+  </p>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const word = document.querySelector('.rise-on-hover');
+      word.addEventListener('mouseover', function() {
+        word.classList.add('hovered');
+      });
+      word.addEventListener('mouseout', function() {
+        word.classList.remove('hovered');
+      });
+    });
+  </script>
+</body>
+
+</html>
