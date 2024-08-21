@@ -37,7 +37,7 @@ body {
   overflow: hidden;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 
 h1 {
@@ -84,13 +84,34 @@ ul {
   padding-bottom: 20px;
 }
 
+ul.horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+li a.new-class {
+  display: block;
+  border: none;
+  transition: transform 0.9s ease;
+}
+
+
+
 li a {
   text-decoration: none;
   border: 1px solid hsla(244, 87%, 76%, 0.486);
+  display: inline-block;
+  transition: transform 0.9s ease;
 }
 
+
 li a:hover {
-  background-color: hsl(241, 77%, 44%);
+  transform: translateY(+4px);
 }
 
 a.T {
@@ -111,7 +132,7 @@ img.mb, img.ima {
   width: 100%;
   max-width: 100%;
   border-radius: 2px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px rgb(174, 255, 11);
   margin-bottom: 20px;
 }
 
@@ -127,29 +148,6 @@ a.header-link:hover {
 }
 
 
-/* Ordered and Unordered Lists */
-ol.mb, ul.mb {
-  color: rgb(255, 255, 255);
-  margin: auto;
-  border-radius: 1px; 
-  padding: 20px;
-  background-image: linear-gradient(hsl(241, 81%, 55%), rgb(3, 52, 98));
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  max-width: 90%;
-}
-
-
-
-table.mb {
-  color: rgb(255, 255, 255);
-  text-align: left;
-  padding: 20px;
-  border-radius: 15px;
-  background-image: linear-gradient(hsl(241, 81%, 55%), rgb(3, 52, 98));
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  margin: 20px auto;
-  width: 90%;
-}
 
 
 p.main {
