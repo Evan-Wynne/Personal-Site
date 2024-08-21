@@ -17,30 +17,29 @@ body {
     display: flex; /* Add this line to make it a row */
     justify-content: center; /* Add this line to center the items horizontally */
     padding: 10px;
-  };
-  
+    flex-direction: column; /* Add this line to make the items appear on top of each other */
+    align-items: center; /* Add this line to center the items vertically */
+}
 
 .social-media li {
   display: inline-block;
   margin-right: 10px;
   font-size: 1.5rem;
   border-radius: 50%;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
   transition: transform 0.3s ease; /* Add transition property */
-
 }
 
 .social-media li a {
-  text-decoration: none;
-  padding: 10px;
-  background-color: #818391;
-  border-radius: 10px;
-  color: #2200ff;
-  font-weight: bold;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
 }
 
-
-/* Heading 1 */
 h1 {
   margin-top: 35px;
   @media (max-width: 768px) {
@@ -64,7 +63,13 @@ p {
   margin: 20px;
 }
 
-
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
 
 
 
@@ -81,7 +86,7 @@ ul {
 
 li a {
   text-decoration: none;
-  border: 1px solid hsla(244, 100%, 52%, 0.486);
+  border: 1px solid hsla(244, 87%, 76%, 0.486);
 }
 
 li a:hover {
@@ -126,7 +131,7 @@ a.header-link:hover {
 ol.mb, ul.mb {
   color: rgb(255, 255, 255);
   margin: auto;
-  border-radius: 15px; 
+  border-radius: 1px; 
   padding: 20px;
   background-image: linear-gradient(hsl(241, 81%, 55%), rgb(3, 52, 98));
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
