@@ -83,14 +83,14 @@ a.cta-button:hover {
 
 .cta-image {
   flex: 0 1 auto;
-  max-width: 300px;
+  max-width: 350px;
   margin: 0; /* Remove any excess margin */
   text-align: center;
 }
 
 .cta-image img {
-  width: 80%;
-  max-width: 300px;
+  width: 90%;
+  max-width: 350px;
   height: auto;
   border-radius: 10px;
 }
