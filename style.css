@@ -10,7 +10,11 @@ h1, h2 {
   text-align: center;
   margin: 10px;
 }
-
+h2.cta-heading {
+  text-align: left;
+  margin: 20px;
+  font-size: 2rem;
+}
 /* Paragraph */
 p {
   color: rgb(243, 243, 243);
@@ -68,28 +72,26 @@ a.cta-button:hover {
   
 }
 /* Call-To-Action Section */
-.cta-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 20px 50px;
-  padding: 20px;
-  background-color: #1c1c1c;
-  border-radius: 15px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
-}
+
+
 
 .cta-text {
-  max-width: 60%;
+  flex: 1;
   text-align: left;
+  margin-right: 5px; /* Adjust space between text and image */
 }
 
-.cta-text h2 {
-  color: #07a0ff;
+.cta-image {
+  flex: 0 1 auto;
+  max-width: 300px;
+  margin: 0; /* Remove any excess margin */
+  text-align: center;
 }
 
 .cta-image img {
+  width: 80%;
   max-width: 300px;
+  height: auto;
   border-radius: 10px;
 }
 
@@ -170,30 +172,98 @@ ul.horizontal {
   list-style-type: none;
 }
 
+.cta-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* 20px gap between the two CTA sections */
+  margin: 20px 90px; /* 90px margin on left and right */
+}
+.cta-section {
+  flex: 1 1 48%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding: 20px; /* Reduced padding for less gap around content */
+  background-color: #1c1c1c;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
 
 
+/* Mobile View - Stacked */
+@media (max-width: 900px) {
+  .cta-container {
+    flex-direction: column;
+    gap: 20px; /* Reduced gap for mobile view */
+    margin: 20px; /* Standard margin for mobile view */
+  }
+
+  .cta-section {
+    flex: 1 1 100%;
+  }
+}
+
+
+.cta-text {
+  flex: 1;
+  text-align: left;
+  margin-right: 5px; /* Space between text and image */
+}
+
+.cta-image {
+  flex: 0 1 auto;
+  max-width: 300px;
+  margin: 0; /* Remove any excess margin */
+  text-align: center;
+}
+
+.cta-image img {
+  width: 80%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
 /* Responsive Styling for Smaller Screens */
 @media (max-width: 710px) {
   .cta-section {
     flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
   .cta-text {
+    margin-right: 0; /* Remove right margin on small screens */
     max-width: 100%;
   }
 
   .cta-image {
     margin-top: 20px;
+    max-width: 100%;
   }
 
   .cta-image img {
-    width: 60%;
-    max-width: 300px;
+    width: 80%;
+    max-width: 200px;
+  }
+
+  .horizontal {
+    justify-content: center;
+    padding-top: 10px;
   }
 }
+/* Responsive Styling for Smaller Screens */
+/* Extra small screen adjustments */
+@media (max-width: 300px) {
+  .cta-section {
+    padding: 10px; /* Optional: reduce padding for small screens */
+  }
 
-
+  .cta-image img {
+    width: 80%; /* Control image size */
+    max-width: 150px;
+  }
+}
 .nav-item {
   position: relative;
   display: inline-block;
