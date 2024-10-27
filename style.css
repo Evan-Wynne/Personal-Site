@@ -25,7 +25,10 @@ a {
   text-decoration: none;
   position: relative;
 }
-
+::selection {
+  background-color: rgba(45, 227, 255, 0);
+  color: rgb(14, 223, 255);
+}
 a::after {
   content: '';
   position: absolute;
@@ -54,7 +57,7 @@ a.cta-button {
   background-color: #07a0ff;
   color: white;
   padding: 10px 20px;
-  margin-top: 20px;
+  margin:20px;
   border-radius: 5px;
   font-weight: bold;
   transition: background-color 0.3s ease;
@@ -62,6 +65,7 @@ a.cta-button {
 
 a.cta-button:hover {
   background-color: #056fbd;
+  
 }
 
 /* Header */
@@ -168,7 +172,7 @@ ul.horizontal {
 }
 
 /* Responsive Styling for Smaller Screens */
-@media (max-width: 400px) {
+@media (max-width: px) {
   .cta-section {
     flex-direction: column;
     text-align: center;
