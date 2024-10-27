@@ -67,6 +67,31 @@ a.cta-button:hover {
   background-color: #056fbd;
   
 }
+/* Call-To-Action Section */
+.cta-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 50px;
+  padding: 20px;
+  background-color: #1c1c1c;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.cta-text {
+  max-width: 60%;
+  text-align: left;
+}
+
+.cta-text h2 {
+  color: #07a0ff;
+}
+
+.cta-image img {
+  max-width: 300px;
+  border-radius: 10px;
+}
 
 /* Header */
 header {
@@ -145,34 +170,27 @@ ul.horizontal {
   list-style-type: none;
 }
 
-/* Call-To-Action Section */
-.cta-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 50px 20px;
-  padding: 20px;
-  background-color: #1c1c1c;
-  border-radius: 15px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
-}
+/* When Screen Width is Less than 768px - 2x2 Grid */
+@media (max-width: 768px) {
+  nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+  }
 
-.cta-text {
-  max-width: 60%;
-  text-align: left;
-}
+  nav li {
+    width: auto;
+    text-align: center;
+    padding: 10px 0;
+  }
 
-.cta-text h2 {
-  color: #07a0ff;
+  nav li a {
+    font-size: 1.1em;
+  }
 }
-
-.cta-image img {
-  max-width: 300px;
-  border-radius: 10px;
-}
-
 /* Responsive Styling for Smaller Screens */
-@media (max-width: px) {
+@media (max-width: 710px) {
   .cta-section {
     flex-direction: column;
     text-align: center;
@@ -187,11 +205,15 @@ ul.horizontal {
   }
 
   .cta-image img {
-    width: 100%;
+    width: 60%;
     max-width: 300px;
   }
+}
 
+/* When Screen Width is Less than 500px - Single Column */
+@media (max-width: 500px) {
   nav ul {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
@@ -199,7 +221,7 @@ ul.horizontal {
   nav li {
     width: 100%;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px 5px;
   }
 
   nav li a {
