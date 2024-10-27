@@ -6,45 +6,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="badminton.png"> 
   <link rel="stylesheet" href="style.css">
+  <meta name="author" content="Evan Wynne">
+  <meta name="keywords" content="Evan Wynne, projects, portfolio, experience, software development, books, podcasts, education">
+  <title>Evan Wynne - Personal Site</title>
 </head>
-
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "name": "Evan Wynne",
+    "jobTitle": "Software Developer",
+    "url": "http://evanwynne.com",
+    "sameAs": [
+      "https://linkedin.com/in/evan-wynne-sps/",
+      "https://x.com/EvanWynne0",
+      "https://github.com/Evan-Wynne"
+    ]
+  }
+</script>
 <body>
-  <h1><a class="header-link" href="index.html">Evan Wynne</a></h1>
-  
-  <nav class='navbar'>
-    <ul>
-      <li><a class = "T" href="https://makerterminal.com">What I'm working on</a></li>
-      <li><a class = "T" href="test.html">test</a></li>
-      <!-- <li><a class = "T" href="create.html">Diary</a></li>    -->
+  <header>
+    <h1><a class="header-link" href="index.html">Evan Wynne</a></h1>
+  </header>
+
+  <nav class="navbar">
+    <ul style="list-style-type: none; padding: 0; display: flex; justify-content: space-around;">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      _//_
+      <li><a href="about.html" class="nav-link">About</a></li>
+      _||_
+      <li><a href="experience.html" class="nav-link">Experience</a></li>
+      _\\_
+      <li><a href="projects.html" class="nav-link">Projects</a></li>
     </ul>
   </nav>
-      
-    <!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/evanwynne/chat" style="min-width:200px;height:437.5px;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-<!-- Calendly inline widget end -->
-    <div>
-      
-      <h2 class = "social-media">Social Media</h2>
-      <ul class = "horizontal">
-      <li><a class = "new-class" href="https://www.linkedin.com/in/evan-wynne-sps/"><img src="linkedin.png" alt="LinkedIn" style="width: 50px;"></a></li>
-      <li><a class = "new-class" href="https://x.com/EvanWynne18"><img src="logos.png" alt="Twitter" style="width: 50px;"></a></li>
-      <li><a class = "new-class" href="https://github.com/Evan-Wynne"><img src="github.png" alt="GitHub" style="width: 50px;"></a></li>
-      </ul>
+    <!-- Call-To-Action Section -->
+    <div class="cta-section">
+      <div class="cta-text">
+        <h2>Welcome to my site!</h2>
+        <p>Hi, I'm Evan Wynne, a passionate software developer specializing in web technologies. Explore my portfolio to learn more about my projects, skills, and interests.</p>
+        <a href="projects.html" class="cta-button">See My Work</a>
+      </div>
+      <div class="cta-image">
+        <img src="images/evan.jpg" alt="Evan Wynne Image">
+      </div>
     </div>
+  
+  <br>
+
+  <div>
+    <h2 class="social-media">Socials</h2>
+    <ul class="horizontal">
+      <li><a class="new-class" href="https://www.linkedin.com/in/evan-wynne-sps/"><img src="images/linkedin.png" alt="LinkedIn" style="width: 50px;"></a></li>
+      <li><a class="new-class" href="https://x.com/EvanWynne0"><img src="images/logos.png" alt="Twitter" style="width: 50px;"></a></li>
+      <li><a class="new-class" href="https://github.com/Evan-Wynne"><img src="images/github.png" alt="GitHub" style="width: 50px;"></a></li>
+    </ul>
+  </div>
+  
+  <div> 
+    <p><b>Disclaimer:</b><br>Most of this is already on my <a href="https://evan-wynne-sps">linkedin</a>.</p>
+  </div>
+
+  <div>
+    <h2>Education</h2>
+    <p>3 years at hustlers university. graduaed Ginder Karten with straight A's.</p>
+  </div>
 
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const word = document.querySelector('.rise-on-hover');
-      word.addEventListener('mouseover', function() {
-        word.classList.add('hovered');
-      });
-      word.addEventListener('mouseout', function() {
-        word.classList.remove('hovered');
-      });
-    });
-  </script>
 </body>
-
 </html>

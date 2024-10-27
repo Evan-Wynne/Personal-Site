@@ -1,12 +1,13 @@
 sites to link:
-my cv
-my certifications
-my socials:
-    linkedin
-    x
-    publications
-    substack
-    calendly
+pdf:
+    my cv 
+    my certifications
+    my socials:
+        linkedin
+        x
+        publications
+        substack
+        calendly
 
 resources: (things i pay for)
     remnote
@@ -16,11 +17,7 @@ resources: (things i pay for)
         investing
         technology
 
-
-
-photos
-
-
+photo gallery
 
 barbershop
 site for grants
