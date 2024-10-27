@@ -170,25 +170,8 @@ ul.horizontal {
   list-style-type: none;
 }
 
-/* When Screen Width is Less than 768px - 2x2 Grid */
-@media (max-width: 768px) {
-  nav ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    justify-items: center;
-  }
 
-  nav li {
-    width: auto;
-    text-align: center;
-    padding: 10px 0;
-  }
 
-  nav li a {
-    font-size: 1.1em;
-  }
-}
 /* Responsive Styling for Smaller Screens */
 @media (max-width: 710px) {
   .cta-section {
@@ -210,24 +193,6 @@ ul.horizontal {
   }
 }
 
-/* When Screen Width is Less than 500px - Single Column */
-@media (max-width: 500px) {
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav li {
-    width: 100%;
-    text-align: center;
-    padding: 10px 5px;
-  }
-
-  nav li a {
-    font-size: 1.2em;
-  }
-}
 
 .nav-item {
   position: relative;
