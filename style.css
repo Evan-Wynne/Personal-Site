@@ -1,8 +1,4 @@
 
-
-
-
-
 body {
   background-color: rgba(8, 3, 1, 0.947); 
   margin: 0; 
@@ -255,7 +251,9 @@ ul.horizontal {
 /* Responsive Styling for Smaller Screens */
 @media (max-width: 710px) {
   #projects-page .cta-container {
-    grid-template-columns: 1fr; /* Switch to single column */
+    grid-template-columns: 1fr; /* Single column layout on narrow screens */
+    margin: 0 auto; /* Center the content */
+    padding: 0 20px; /* Smaller padding on narrow screens */
   }
   #projects-page .cta-text {
     margin-right: 0; /* Remove right margin on small screens */
