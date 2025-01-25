@@ -49,8 +49,8 @@
     <div class="cta-section">
       <div class="cta-text">
         <h2 class="cta-heading">Useful Sh1t</h2>
-        <h3>General</h3>
-        <ul>
+        <button onclick="toggleDropdown('general-dropdown')" style="background-color: rgba(45, 227, 255, 0.655); color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Toggle General Links</button>
+        <ul id="general-dropdown" style="display: none;">
           <li><a href="https://book.buildergroop.com/?ref=producthunt">Builderbook</a> - first time founder info</li>
           <li><a href="https://makerterminal.com">Makerterminal.com</a>(of course) - 4 free lists of investors & accelerators & grants and competions</li>
           <li><a href="https://www.craft.do/?utm_source=CraftShare">Craft.do</a> - collaborative document editor</li>
@@ -92,42 +92,47 @@
           }
         </script>
 
-        <h3>Programmes</h3>
-        <ul>
-          <li><a href="https://www.joinpatch.org/">Patch</a> - Best thing I ever did</li>
-          <li><a href="https://joininteract.com/">Interact</a></li>
-          <li><a href="https://espr-camp.org/">ESPR</a> - Summer Program on Rationality</li>
-          <li><a href="https://www.cee.org/programs/research-science-institute">Research Science Institute</a> - Summer research program for 11th grade</li>
-          <li><a href="https://www.tks.world/">The Knowledge Society (TKS)</a> - Good introduction to tech startups for teens</li>
-          <li><a href="https://www.makerterminal.com/">Find over 2k more of these programmes by clicking here</a> - Makerterminal</li>
-        </ul>
-        <h3>Competitions</h3>
-        <ul>
-          <li><a href="https://www.youngeconomist.ie/">Young Economist</a> - Economics competition for students</li>
-          <li><a href="https://btyoungscientist.com/">BT Young Scientist</a> - National science competition</li>
-          <li><a href="https://www.jointecs.org/">TECS</a> - A competition for aspiring technologists, engineers, creators and scientists.</li>
-          <li><a href="https://scifest.ie/">Scifest</a> - Irish national science competition</li>
-          <li><a href="https://www.f1inschools.com/">F1 in Schools</a> - Design, build, and race model F1 cars</li>
-        </ul>
-        <h3>Podcasts</h3>
-        <ul>
-          <li><a href="https://open.spotify.com/show/4fOY2LvcE0yxW5pYIdZvD6">TheGoodBooks</a></li>
-          <li><a href="https://open.spotify.com/show/4JH4tybY1zX6e5hjCwU6gF">Dwarkesh Podcast</a></li>
-          <li><a href="https://open.spotify.com/playlist/1L3ZST63JYxEGkE1o37FIr">The Diary of a CEO</a></li>
-          <li><a href="https://open.spotify.com/show/3j2KMcZTtgTNBKwtZBMHvl">The Twenty Minute VC (20VC)</a></li>
-          <li><a href="https://open.spotify.com/show/53m2GzA3ImJFwiwPV0svCZ">The OpenVc</a></li>
-          <li><a href="https://open.spotify.com/show/0m734g5SrcZdfApdWP0ITt">The Entrepreneur Experiment</a></li>
-          <li><a href="https://open.spotify.com/show/7txiovdzPARhjm18NwMUYj">Founders</a></li>
-          <li><a href="https://open.spotify.com/show/1tgqafxZAB0Bjd8nkwVtE4">Y Combinator Startup Podcast</a></li>
-        </ul>
-        <h3>Books</h3>
-        <ul>
-          <li>Renaissance Nation by David McWilliams - A reflection on Ireland's economic and social transformation</li>
-          <li>The Diary of a CEO by Steven Bartlett</li>
-          <li>The Trading Game by Gary Stevenson - Autobiography of Citibank’s most profitable trader</li>
-          <li>Atomic Habits by James Clear - The best habit book out there</li>
-          <li>The Power Law by Sebastian Mallaby - A comprehensive look at the venture capital industry and its impact on innovation</li>
-          <li>Only the Paranoid Survive by Andrew Grove - Lessons in business strategy and leadership from Intel's former CEO</li>
+          <h3>Programmes</h3>
+          <button onclick="toggleDropdown('programmes-dropdown')" style="background-color: rgba(45, 227, 255, 0.655); color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Toggle Programmes Links</button>
+          <ul id="programmes-dropdown" style="display: none;">
+            <li><a href="https://www.joinpatch.org/">Patch</a> - Best thing I ever did</li>
+            <li><a href="https://joininteract.com/">Interact</a></li>
+            <li><a href="https://espr-camp.org/">ESPR</a> - Summer Program on Rationality</li>
+            <li><a href="https://www.cee.org/programs/research-science-institute">Research Science Institute</a> - Summer research program for 11th grade</li>
+            <li><a href="https://www.tks.world/">The Knowledge Society (TKS)</a> - Good introduction to tech startups for teens</li>
+            <li><a href="https://www.makerterminal.com/">Find over 2k more of these programmes by clicking here</a> - Makerterminal</li>
+          </ul>
+          <h3>Competitions</h3>
+          <button onclick="toggleDropdown('competitions-dropdown')" style="background-color: rgba(45, 227, 255, 0.655); color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Toggle Competitions Links</button>
+          <ul id="competitions-dropdown" style="display: none;">
+            <li><a href="https://www.youngeconomist.ie/">Young Economist</a> - Economics competition for students</li>
+            <li><a href="https://btyoungscientist.com/">BT Young Scientist</a> - National science competition</li>
+            <li><a href="https://www.jointecs.org/">TECS</a> - A competition for aspiring technologists, engineers, creators and scientists.</li>
+            <li><a href="https://scifest.ie/">Scifest</a> - Irish national science competition</li>
+            <li><a href="https://www.f1inschools.com/">F1 in Schools</a> - Design, build, and race model F1 cars</li>
+          </ul>
+          <h3>Podcasts</h3>
+          <button onclick="toggleDropdown('podcasts-dropdown')" style="background-color: rgba(45, 227, 255, 0.655); color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Toggle Podcasts Links</button>
+          <ul id="podcasts-dropdown" style="display: none;">
+            <li><a href="https://open.spotify.com/show/4fOY2LvcE0yxW5pYIdZvD6">TheGoodBooks</a></li>
+            <li><a href="https://open.spotify.com/show/4JH4tybY1zX6e5hjCwU6gF">Dwarkesh Podcast</a></li>
+            <li><a href="https://open.spotify.com/playlist/1L3ZST63JYxEGkE1o37FIr">The Diary of a CEO</a></li>
+            <li><a href="https://open.spotify.com/show/3j2KMcZTtgTNBKwtZBMHvl">The Twenty Minute VC (20VC)</a></li>
+            <li><a href="https://open.spotify.com/show/53m2GzA3ImJFwiwPV0svCZ">The OpenVc</a></li>
+            <li><a href="https://open.spotify.com/show/0m734g5SrcZdfApdWP0ITt">The Entrepreneur Experiment</a></li>
+            <li><a href="https://open.spotify.com/show/7txiovdzPARhjm18NwMUYj">Founders</a></li>
+            <li><a href="https://open.spotify.com/show/1tgqafxZAB0Bjd8nkwVtE4">Y Combinator Startup Podcast</a></li>
+          </ul>
+        <h3>Books (no affiliate)</h3>
+        <button onclick="toggleDropdown('books-dropdown')" style="background-color: rgba(45, 227, 255, 0.655); color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Toggle Books Links</button>
+        <ul id="books-dropdown" style="display: none;">
+          <li><a href="https://www.amazon.co.uk/Renaissance-Nation-Children-Rewrote-Ireland/dp/B081QRT5Q6/ref=sr_1_1?s=books&sr=1-1">Renaissance Nation by David McWilliams</a> - A reflection on Ireland's economic and social transformation</li>
+          <li><a href="https://www.amazon.co.uk/Diary-CEO-Laws-Business-Life/dp/152914650X">The Diary of a CEO by Steven Bartlett</a></li>
+          <li><a href="https://www.amazon.co.uk/The-Trading-Game-A-Confession/dp/B0CJ9QWFY1/ref=sr_1_1?s=audible&sr=1-1">The Trading Game by Gary Stevenson</a> - Autobiography of Citibank’s most profitable trader</li>
+          <li><a href="https://www.amazon.co.uk/Atomic-Habits-Proven-Build-Break/dp/B07J1XQSNK/ref=sr_1_1?s=audible&sr=1-1">Atomic Habits by James Clear</a> - The best habit book out there</li>
+          <li><a href="https://www.amazon.co.uk/Power-Law-Silicon-Valleys-Venture/dp/B098KR4CHK/ref=sr_1_1?s=audible&sr=1-1">The Power Law by Sebastian Mallaby</a> - A comprehensive look at the venture capital industry and its impact on innovation</li>
+          <li><a href="https://www.amazon.co.uk/Only-Paranoid-Survive-Exploit-Challenge/dp/1800810628/ref=sr_1_1?s=audible&sr=1-1">Only the Paranoid Survive by Andrew Grove</a> - Lessons in business strategy and leadership from Intel's former CEO</li>
+          <li><a href="https://audiobooksbee.com/the-diary-of-a-ceo-by-steven-bartlett/">I Would highly reccomend against using a site like this one to download these as mp3s for free... </a></li>
         </ul>
 
       
@@ -138,7 +143,7 @@
     </div>
   </div>
   <meta property="og:title" content="Evan Wynne - Personal Site">
-  <meta property="og:description" content="18-year-old entrepreneur and student with interests in technology, finance, and economics. Check out his projects and experiences.">
+  <meta property="og:description" content="18-year-old student with interests in technology, finance, and economics. Check out his projects and experiences.">
   <meta property="og:image" content="images/evan.jpg">
   <meta property="og:url" content="https://evanwynne.com">
   <meta name="twitter:card" content="summary_large_image">
