@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <meta name="author" content="Evan Wynne">
   <meta name="keywords" content="Evan Wynne, personal site, makerterminal, evan wynne linkedin, projects, portfolio, experience, software development">
-  <meta name="Description" content="Evan Wynne's personal site. Evan is a student with an interest in fintech and economics. Check out his projects.">
+  <meta name="Description" content="Hi I'm Evan. Contact me.">
   <title>Evan Wynne | Dublin Student | Portfolio Site </title>
   <script type="application/ld+json">
     {
@@ -48,25 +48,37 @@
   <div class="cta-container">
     <div class="cta-section">
       <div class="cta-text">
-        <h2 class="cta-heading">Hey! I'm Evan</h2>
+        <h2 class="cta-heading">Hi I'm Evan</h2>
         <p>I'm an 18-year-old student with an interest in fintech, data analytics and economics.</p>
-        <p><u>About me:</u></p>
-        <ul>
-          <li>☘️ I'm from Dublin, Ireland </li>
-          <li>💡 I build <a href="https://www.evanwynne.com/projects.html">projects</a></li>
-          <li>🎓 6th Year Student @<a href="https://suttonparkschool.ie/">SPS</a></li>
-          <li>🚀 <a href="https://www.joinpatch.org/">Patch</a> 2023 cohort</li>
-          <li>🏆 5th Year National <a href="https://www.youngeconomist.ie/">YEOTY</a>- 2024</li>
-          <li>🏅 National Awards at <a href="https://btyoungscientist.com/">BTYS</a> &amp; <a href="https://scifest.ie/">Sci-Fest</a></li>
-          <li>🏸 Badminton player</li>
-        </ul>
+        <div class="dropdown">
+          <button onclick="toggleDropdown()" class="dropdown-btn">About me ▼</button>
+          <div id="myDropdown" class="dropdown-content" style="display: none;"></div>
+            <ul>
+              <li>☘️ I'm from Dublin, Ireland </li>
+              <li>💡 I build <a href="https://www.evanwynne.com/projects.html">projects</a></li>
+              <li>🎓 6th Year Student @<a href="https://suttonparkschool.ie/">SPS</a></li>
+              <li>🚀 <a href="https://www.joinpatch.org/">Patch</a> 2023 cohort</li>
+              <li>🏆 5th Year National <a href="https://www.youngeconomist.ie/">YEOTY</a>- 2024</li>
+              <li>🏅 National Awards at <a href="https://btyoungscientist.com/">BTYS</a> &amp; <a href="https://scifest.ie/">Sci-Fest</a></li>
+              <li>🏸 Badminton player</li>
+            </ul>
+          </div>
+        </div>
+        <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById("myDropdown");
+            if (dropdown.style.display === "none") {
+          dropdown.style.display = "block";
+            } else {
+          dropdown.style.display = "none";
+            }
+        }
+        </script>
         <p>Lately, I'm focused on building the best free resource for founders to find funding: <a href="https://makerterminal.com/">Makerterminal.com</a></p>
-        <p>You can find me on <a href="https://www.linkedin.com/in/evan-wynne-sps/">LinkedIn</a> or <a href="https://x.com/EvanWynne0">X</a></p>
-      </div>
-      <div class="cta-image">
+       
+        <div class="cta-image">
         <div>
-          <img src="images/badminton.png" alt="Evan Wynne Personal Site">
-          <ul class="horizontal">
+         <ul class="horizontal">
             <li><a class="new-class" href="https://www.linkedin.com/in/evan-wynne-sps/"><img src="images/linkedin.png" alt="LinkedIn" style="width: 50px;"></a></li>
             <li><a class="new-class" href="https://x.com/EvanWynne0"><img src="images/logos.png" alt="Twitter" style="width: 50px;"></a></li>
             <li><a class="new-class" href="https://github.com/Evan-Wynne"><img src="images/github.png" alt="GitHub" style="width: 50px;"></a></li>
